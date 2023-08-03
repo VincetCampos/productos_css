@@ -1,0 +1,42 @@
+.item1{
+    grid-area: producto1;
+}
+.item2{
+    grid-area: producto2;
+}
+.item3{
+    grid-area: producto3;
+}
+.item4{
+    grid-area: producto4;
+}
+.item5{
+    grid-area: producto5;
+}
+.item6{
+    grid-area: producto6;
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-areas: 
+    'producto1 producto2 producto3'
+    'producto4 producto5 producto6';
+    padding: 30px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .grid-productos{
+        display: grid;
+        grid-template-areas:
+        'producto1'
+        'producto2'
+        'producto3'
+        'producto4'
+        'producto5'
+        'producto6';
+        padding: 30px;
+        gap: 10px;
+    }
+}
